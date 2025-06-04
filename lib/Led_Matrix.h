@@ -20,6 +20,6 @@ void configure_leds_matrix(); // Função para configurar a matriz de LEDs
 // Converte uma estrutura de cor RGB para um valor 32 bits
 uint32_t rgb_matrix(led_color color);
 
-void draw_led_matrix(uint8_t subway_line, led_color color);
+void draw_led_matrix(uint8_t station_line, led_color color);
 
 #endif

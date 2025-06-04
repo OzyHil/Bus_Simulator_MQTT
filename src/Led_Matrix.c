@@ -48,13 +48,13 @@ uint32_t rgb_matrix(led_color color)
 }
 
 // Função para desenhar as cores do semáforo
-void draw_led_matrix(uint8_t subway_line, led_color color)
+void draw_led_matrix(uint8_t station_line, led_color color)
 {
   for (int8_t i = 0; i < NUM_PIXELS; i++)
   {
     uint32_t color_to_send;
 
-    if (matrix[i] == subway_line)
+    if (matrix[i] == station_line)
     {
       color_to_send = rgb_matrix(color); 
     }
